@@ -8,7 +8,7 @@
     rgba(55, 58, 62, 1) 100%
   );
   padding-top: 4rem;
-  /* padding-bottom: 2rem; */
+  padding-bottom: 3rem;
 }
 
 .process-col-1 {
@@ -54,7 +54,7 @@
   z-index: 0;
   position: absolute;
   width: 125%;
-  top: -109px;
+  top: -60px;
   bottom: 0;
   right: 34%;
 }

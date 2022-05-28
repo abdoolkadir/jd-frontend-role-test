@@ -19,14 +19,16 @@ function Navbar() {
                   <ul className="submenu-items">
                     {data.submenu.map((submenu) => (
                       <li>
-                        <Link to="#">{submenu.title}</Link>
+                        <Link to={submenu.title}>{submenu.title}</Link>
                       </li>
                     ))}
                   </ul>
                 </li>
               ) : (
                 <li key={index}>
-                  <Link to="#">{data.title}</Link>
+                  <Link to={data.title === 'Home' ? '/' : data.title}>
+                    {data.title}
+                  </Link>
                 </li>
               )
             )}

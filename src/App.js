@@ -5,6 +5,7 @@ import Blog from './pages/blog/Blog';
 import Portfolio from './pages/portfolio/Portfolio';
 import Shop from './pages/shop/Shop';
 import Navbar from './components/layout/navbar/Navbar';
+import Footer from './components/layout/footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
             <Route path="/shop" element={<Shop />}></Route>
           </Routes>
         </main>
+
+        <Footer />
       </div>
     </Router>
   );

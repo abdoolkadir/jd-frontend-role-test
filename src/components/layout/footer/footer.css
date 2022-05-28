@@ -1,0 +1,22 @@
+footer {
+  color: #fff;
+  padding: 2rem 0;
+  padding-bottom: 1.58rem;
+  background: var(--primary-black);
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 250px;
+}
+
+.grid-item img {
+  opacity: 0.3;
+  mix-blend-mode: luminosity;
+  width: 80%;
+}
+
+.grid-item h1 {
+  margin-bottom: 0.5rem;
+}
