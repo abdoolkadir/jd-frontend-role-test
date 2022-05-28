@@ -1,6 +1,7 @@
 import Header from '../../components/layout/header/Header';
 import BenefitsSection from '../sections/Benefits/BenefitsSection';
 import PortfolioSection from '../sections/portfolio/PortfolioSection';
+import ProcessSection from '../sections/process/ProcessSection';
 import SkillsSection from '../sections/skills/SkillsSection';
 
 import './home.css';
@@ -12,6 +13,7 @@ function Home() {
       <BenefitsSection />
       <PortfolioSection />
       <SkillsSection />
+      <ProcessSection />
     </div>
   );
 }
