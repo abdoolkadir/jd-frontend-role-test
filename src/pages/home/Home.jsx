@@ -1,6 +1,7 @@
 import Header from '../../components/layout/header/Header';
 import BenefitsSection from '../sections/Benefits/BenefitsSection';
 import PortfolioSection from '../sections/portfolio/PortfolioSection';
+import SkillsSection from '../sections/skills/SkillsSection';
 
 import './home.css';
 
@@ -10,6 +11,7 @@ function Home() {
       <Header />
       <BenefitsSection />
       <PortfolioSection />
+      <SkillsSection />
     </div>
   );
 }
