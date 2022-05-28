@@ -1,0 +1,42 @@
+.header {
+  background: rgb(55, 58, 62);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 58, 62, 1) 21%,
+    rgba(90, 92, 96, 1) 58%,
+    rgba(55, 58, 62, 1) 100%
+  );
+
+  color: #fff;
+}
+
+.header .container {
+  display: flex;
+  padding: 4rem 0 0 0;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-col-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.header-col-left h1 span {
+  display: block;
+  color: #fff;
+  font-size: var(--xl-font-size);
+}
+
+.header-col-right {
+  width: 50%;
+}
+
+.header-col-right img {
+  margin-top: 30px;
+  width: 100%;
+  transform: scale(1.3);
+}

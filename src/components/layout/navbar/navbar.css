@@ -1,0 +1,54 @@
+.navbar {
+  background: rgb(55, 58, 62);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 58, 62, 1) 21%,
+    rgba(90, 92, 96, 1) 58%,
+    rgba(55, 58, 62, 1) 100%
+  );
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+}
+
+.navbar li {
+  font-size: var(--xs-font-size);
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar nav ul li {
+  display: flex;
+  margin-left: 1rem;
+}
+
+li button {
+  cursor: pointer;
+  font-size: var(--xs-font-size);
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu-items {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 0 2rem 0 0;
+  margin-left: 0;
+  display: none !important;
+}
