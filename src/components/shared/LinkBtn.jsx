@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-function LinkBtn({ link, btnText }) {
+function LinkBtn({ link, btnText, className }) {
   return (
-    <Link className="btn" to={link}>
+    <Link className={className} to={link}>
       {btnText}
     </Link>
   );

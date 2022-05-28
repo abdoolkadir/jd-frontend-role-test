@@ -12,7 +12,11 @@ function Header() {
             <span>in simplicity</span>
           </h1>
           <p>I'm very proud to present some of my latest work</p>
-          <LinkBtn link={'/portfolio'} btnText={'Go to portfolio'} />
+          <LinkBtn
+            link={'/portfolio'}
+            btnText={'Go to portfolio'}
+            className={'btn'}
+          />
         </div>
         <div className="header-col-right">
           <img src={heroImage} alt="" />
