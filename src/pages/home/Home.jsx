@@ -11,9 +11,9 @@ function Home() {
     <div className="home">
       <Header />
       <BenefitsSection />
-      <PortfolioSection />
+      <PortfolioSection bgColor={'#373a3e'} />
       <SkillsSection />
-      <ProcessSection />
+      <ProcessSection text={'Like what you see? Click here for more'} />
     </div>
   );
 }

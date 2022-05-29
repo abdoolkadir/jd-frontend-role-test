@@ -29,6 +29,10 @@
   /* width: 25%; */
 }
 
+.portfolio-col-2 {
+  margin-bottom: 2rem;
+}
+
 .portfolio-col-3 {
   display: flex;
   gap: 2rem;

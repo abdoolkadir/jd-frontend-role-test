@@ -3,8 +3,9 @@ import image from '../../../components/assets/image-2.png';
 import ProcessBar from '../../../components/shared/ProcessBar';
 import './processSection.css';
 import LinkBtn from '../../../components/shared/LinkBtn';
+import ClickHereForMore from '../../../components/shared/ClickHereForMore';
 
-function ProcessSection() {
+function ProcessSection({ text }) {
   return (
     <section className="process-section">
       <div className="process-col-1 container">
@@ -36,10 +37,7 @@ function ProcessSection() {
         </div>
       </div>
 
-      <div className="process-col-4">
-        <p>Like what you see? Click here for more</p>
-        <LinkBtn btnText="View more" className="btn" link={'/portfolio'} />
-      </div>
+      <ClickHereForMore className={'process-col-4'} text={text} />
     </section>
   );
 }
