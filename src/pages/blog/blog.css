@@ -1,0 +1,78 @@
+.blog-posts-section {
+  background: var(--primary-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.blog-posts-section .container {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+.blog-posts-section .container .overlay-header-text {
+  z-index: 0;
+}
+
+.blog-posts-section .container h2 {
+  z-index: 99;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.blog-card {
+  position: relative;
+  width: 400px;
+}
+
+.blog-card img {
+  border-radius: 5px;
+}
+
+.blog-info {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 2rem 1rem;
+  color: #fff;
+}
+
+.blog-info p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.Creativity {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0px 26.5px 26.5px 0px;
+  position: absolute;
+  background-color: var(--primary-red);
+  color: #fff;
+}
+
+.Photography {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0px 26.5px 26.5px 0px;
+  position: absolute;
+  color: var(--primary-red);
+  background-color: #fff;
+}
+
+.Fashion {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0px 26.5px 26.5px 0px;
+  position: absolute;
+  background-color: #0f0f11;
+  color: #fff;
+}
