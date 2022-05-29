@@ -169,3 +169,28 @@ h4 {
   gap: 1rem;
   padding: 4rem 0;
 }
+
+/* Dropdown */
+li button {
+  cursor: pointer;
+  font-size: var(--xs-font-size);
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu-items {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 1rem 1rem 1rem 0;
+  margin-left: 0;
+  /* display: none !important; */
+}

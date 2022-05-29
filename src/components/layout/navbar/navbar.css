@@ -43,12 +43,12 @@ li button {
 
 .submenu-items {
   position: absolute;
-  top: 45px;
+  top: 25px;
   left: 0;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  padding: 0 2rem 0 0;
+  padding: 1rem 1rem 1rem 0;
   margin-left: 0;
-  display: none !important;
+  /* display: none !important; */
 }
