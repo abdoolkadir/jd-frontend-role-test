@@ -1,18 +1,23 @@
 import { useState } from 'react';
 import useOnclickOutside from 'react-cool-onclickoutside';
-import { FaAngleDown } from 'react-icons/fa';
+import { FaAngleDown, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../navbar/navbar.css';
 import { menuData } from '../../../data/navbar.data';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [navMenu, setNavMenu] = useState(false);
 
   const toggling = () => setIsOpen(!isOpen);
 
   const ref = useOnclickOutside(() => {
     setIsOpen(false);
   });
+
+  const handleNavMenu = () => {
+    setNavMenu(!navMenu);
+  };
   return (
     <div className="navbar">
       <div className="container">
@@ -22,7 +27,7 @@ function Navbar() {
           </h1>
         </div>
 
-        <nav>
+        <nav className={navMenu ? 'nav-menu-open' : 'nav-menu-close'}>
           <ul>
             {menuData.map((data, index) =>
               data.submenu ? (
@@ -52,6 +57,8 @@ function Navbar() {
             )}
           </ul>
         </nav>
+
+        <FaBars className="nav-menu-bar" onClick={handleNavMenu} />
       </div>
     </div>
   );

@@ -72,3 +72,25 @@
   background: #0f0f11;
   margin-inline: auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .process-flex {
+    margin-bottom: 2rem;
+    flex-direction: column;
+    place-content: unset;
+    width: 100%;
+  }
+
+  .process-col-3 img {
+    z-index: 0;
+    position: absolute;
+    transform: scale(1.5);
+    top: -225px;
+    bottom: 0;
+    right: -116%;
+  }
+
+  .process-col-4 {
+    width: 90%;
+  }
+}

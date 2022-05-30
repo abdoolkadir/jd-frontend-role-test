@@ -40,3 +40,25 @@
   width: 100%;
   transform: scale(1.3);
 }
+
+@media only screen and (max-width: 768px) {
+  .header .container {
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .header-col-left h1 span {
+    font-size: var(--md-font-size);
+  }
+
+  .header-col-right img {
+    margin-left: 72px;
+    transform: scale(1.5);
+  }
+
+  .header-col-left,
+  .header-col-right {
+    width: 100%;
+  }
+}

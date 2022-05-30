@@ -51,6 +51,7 @@ ul {
 
 /* Buttons */
 .btn {
+  text-align: center;
   cursor: pointer;
   background: var(--primary-red);
   color: #fff;
@@ -59,6 +60,7 @@ ul {
 }
 
 .btn-secondary {
+  text-align: center;
   cursor: pointer;
   background: var(--primary-gray);
   border: 1px solid #fff;
@@ -193,4 +195,27 @@ li button {
   padding: 1rem 1rem 1rem 0;
   margin-left: 0;
   /* display: none !important; */
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay-header-text {
+    font-size: var(--xl-font-size) !important;
+  }
+
+  h2 {
+    font-size: var(--sm-font-size);
+  }
+
+  .btn {
+    width: 150px;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+  .btn-secondary {
+    width: 150px;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
 }

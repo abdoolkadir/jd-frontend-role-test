@@ -5,6 +5,7 @@
   align-items: center;
   padding: 2rem;
   padding-top: 4rem;
+  color: #fff;
 }
 
 .blog-posts-section .container {
@@ -31,10 +32,12 @@
 
 .blog-card {
   position: relative;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .blog-card img {
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -75,4 +78,10 @@
   position: absolute;
   background-color: #0f0f11;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
 }
