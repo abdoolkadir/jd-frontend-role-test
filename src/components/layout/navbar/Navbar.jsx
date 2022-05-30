@@ -31,14 +31,14 @@ function Navbar() {
           <ul>
             {menuData.map((data, index) =>
               data.submenu ? (
-                <li className="submenu">
+                <li className="submenu" key={index}>
                   <button onClick={toggling}>
                     {data.title} <FaAngleDown />
                   </button>
                   {isOpen && (
                     <ul className="submenu-items" ref={ref}>
                       {data.submenu.map((submenu) => (
-                        <li>
+                        <li key={index}>
                           <Link to={submenu.title} onClick={toggling}>
                             {submenu.title}
                           </Link>

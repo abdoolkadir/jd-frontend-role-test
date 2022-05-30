@@ -19,7 +19,7 @@ function SkillsSection() {
           <div className="skills-inner-col-2">
             <div className="col-1">
               <div className="skills">
-                <div className="skill">
+                <div className="skill" style={{ backgroundColor: '#911214' }}>
                   <h1>R</h1>
                   <span>1</span>
                 </div>
